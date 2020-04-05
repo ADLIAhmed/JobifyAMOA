@@ -1,4 +1,4 @@
-# JobifyAMOA
+# Jobify
 <h1> Guide d'installation </h1>
 
 <h4> 1) Installation de Django dans un shell python</h4>
