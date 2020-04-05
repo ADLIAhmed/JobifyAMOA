@@ -1,0 +1,348 @@
+{%  load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+     <!-- Site Metas -->
+    <title>Jobify - Students Part Time Jobs</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="{% static 'Homepage/images/jobifyico.ico.png'%}" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="{% static 'Homepage/images/apple-touch-icon.png'%}">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'Homepage/css/bootstrap.min.css'%}">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="{% static 'Homepage/style.css'%}">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="{% static 'Homepage/css/responsive.css'%}">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'Homepage/css/custom.css'%}">
+	<script src="{% static 'Homepage/js/modernizr.js'%}"></script> <!-- Modernizr -->
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body id="page-top" class="politics_version">
+
+    <!-- LOADER -->
+    <div id="preloader">
+        <div id="main-ld">
+			<div id="loader"></div>
+		</div>
+    </div><!-- end loader -->
+    <!-- END LOADER -->
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+			<img class="img-fluid" src="{% static 'Homepage/images/tt.png'%}" alt="" />
+		</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+           <li class="nav-item">
+              <a class="nav-link js-scroll-trigger active" href="{% url 'jobify-home' %}">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="{% url 'jobify-categories' %}">Catégories</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="{% url 'jobify-offre' %}">Offres</a>
+            </li>
+              <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="{% url 'jobify-profils' %}">Profils</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="{% url 'jobify-test' %}">Poster une offre</a>
+            </li>
+
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="{% url 'jobify-registration' %}">Joindre</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+	<section id="home" class="main-banner parallaxie" style="background: url('{%static "Homepage/uploads/xm.jpg"%}')";>
+		<div class="heading">
+            <br>
+            <br>
+			<h1>Bienvenue aux Offres</h1>
+			<h3 class="cd-headline clip is-full-width">
+				<span>Offres pour toute catégorie </span>
+
+				<div class="btn-ber">
+                    <br>
+					<a class="get_btn hvr-bounce-to-top" href="{% url 'jobify-test' %}">Poster une offre</a>
+
+				</div>
+			</h3>
+		</div>
+	</section>
+
+    <section class="banner" id="top">
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-5">
+
+                </div>
+
+                <div class="col-md-5 col-md-offset-1">
+                    <section id="first-tab-group" class="tabgroup">
+                        <div id="tab1">
+                            <div class="submit-form">
+                                <br>
+                                <br>
+                                <h4>Voir la disponibilité de votre <em> part time job </em>:</h4>
+                                <form id="form-submit" action="" method="get">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <fieldset>
+                                                <label for="from">Domaine:</label>
+                                                <select required name='from' onchange='this.form.()'>
+                                                    <option value="">Selection du domaine...</option>
+                                                    <optgroup label ="Developpement web">
+                                                        <option>Front-End</option>
+                                                        <option>Back-End</option>
+                                                    </optgroup>
+                                                     <optgroup label ="Developpement mobile">
+                                                        <option>Dev Android</option>
+                                                        <option>Dev IOS</option>
+                                                    </optgroup>
+                                                     <optgroup label ="Finance et Marketing">
+                                                        <option>Comptabilité</option>
+                                                        <option>E-commerce Marketing</option>
+                                                         <option>Stratégie Marketing</option>
+                                                    </optgroup>
+
+                                                    <optgroup label ="Design">
+                                                        <option>PSD & AI</option>
+                                                        <option>Design Graphique</option>
+                                                    </optgroup>
+
+                                                </select>
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <fieldset>
+                                                <label for="to">Ville:</label><br>
+                                                <select required name='to' onchange='this.form.()'>
+                                                    <option value="">Selection de la ville...</option>
+                                                    <option value="Rabat">Rabat</option>
+                                                    <option value="Casablanca">Casablanca</option>
+                                                    <option value="Tanger">Tanger</option>
+                                                    <option value="Agadir">Agadir</option>
+                                                    <option value="Marrakech">Marrakech</option>
+                                                    <option value="Fes">Fes</option>
+                                                    <option value="Oujda">Oujda</option>
+
+                                                </select>
+                                            </fieldset>
+                                            <br>
+                                        </div>
+                                          <div class="col-md-6">
+                                            <fieldset>
+                                                <label for="to">Rémunération :</label>
+                                                <select required name='to' onchange='this.form.()'>
+                                                    <option value="">Selection de la rémunération...</option>
+                                                    <option value="Rabat">0-100</option>
+                                                    <option value="Casablanca">100-500</option>
+                                                    <option value="Tanger">500-1000</option>
+                                                    <option value="Agadir">1000-10000</option>
+                                                    <option value="Marrakech">>10000</option>
+
+
+                                                </select>
+                                            </fieldset>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <fieldset>
+                                                <label for="departure">De:</label>
+                                                <input name="deparure" type="text" class="form-control date" id="deparure" placeholder="Select date..." required onchange='this.form.()'>
+                                            </fieldset>
+                                        </div>
+                                        <br><br>
+                                        <div class="col-md-6">
+                                            <fieldset>
+                                                <label for="return">Jusqu'à:</label>
+                                                <input name="return" type="text" class="form-control date" id="return" placeholder="Select date..." required onchange='this.form.()'>
+                                            </fieldset>
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <fieldset>
+                                                <br>
+                                                <button type="submit" id="form-submit" class="btn">Chercher</button>
+                                            </fieldset>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+<br>
+    <br>
+
+    <div id="services" class="section lb">
+        <div class="container">
+            <div class="section-title text-center">
+                <h3>Offres récentes</h3>
+
+            </div><!-- end title -->
+
+            <div class="row">
+				<div class="col-md-12">
+                    <div class="services-inner-box">
+						<br>
+                        <br>
+						<h2>Designer Graphic</h2>
+                        <br>
+						<p>Nous sommes une société industrielle basée sur la zone industrielle dar bouazza (casablanca), nous cherchons un(e) graphiste désigner ayant bac+2/3 en design, infographie, ou arts appliqués, avec ou sans expérience pour un contrat cdd, avec une promesse d'embauche en cdi.<br>
+            missions :<br><br>
+                 &nbsp;&nbsp;&nbsp;  -conception visuelle et création graphique (illustrations, logotypes, chartes graphiques…).<br>
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-création de supports de communication (présentations, mise en page, retouche d'images...).
+                 <br><br>
+            * Ville : Casablanca <br>
+            * Rénumeration : 1 500 dh  <br>
+            * Période : du 1 Avril au 15 Avril </p>
+
+                </div><!-- end col -->
+
+
+
+                <div class="col-md-12">
+                    <br>
+                    <div class="services-inner-box">
+						<br>
+                        <br>
+						<h2>Responsable Contrôle et conformité /Micro-finance</h2>
+                        <br>
+						<p>Sous la responsabilité du Responsable Administratif et Financier du secteur et en étroite collaboration avec les chefs et les équipes des projets, le/la titulaire du poste est en charge de la gestion de la trésorerie des projets, de la comptabilité, ainsi que l’appui au suivi financier des projets en général.<br>
+
+            Dans ce cadre, le/la titulaire du poste a les attributions suivantes :<br><br>
+
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-maîtriser les techniques d’audit et du contrôle de gestion maîtriser le processus d’élaboration. <br>
+                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- effectuer des travaux de vérification et de contrôle de conformité identifier les écarts significatifs entre réalisation et prévision mesurer .<br>
+                <br>
+
+            * Ville : Rabat <br>
+            * Rénumeration : 5 000 dh <br>
+            * Période : du 27 Mars au 10 Avril </p>
+					</div>
+                </div><!-- end col -->
+
+                <div class="col-md-12">
+                    <br>
+                    <div class="services-inner-box">
+						<br>
+                        <br>
+						<h2>Développeur Full Stack</h2>
+                        <br>
+						<p>Nous cherchons un étudiant développeur Full Stack qui maitrise HTML, CSS, JavaScript, React et Django. De
+                            préférence qu'il a une formation en responsive Design Mobile, Tablette et Desktop.<br><br>
+            Ville : Oujda <br>
+            Rénumeration : 6500 dh <br>
+            Période : du 15 Mars au 5 Avril </p>
+					</div>
+                </div><!-- end col -->
+
+
+
+            </div><!-- end row -->
+
+
+        </div><!-- end container -->
+    </div><!-- end section -->
+
+
+	<div id="pricing" class="section lb">
+		<div class="container">
+            <br><br><br>
+			<div class="section-title text-center">
+                <h3>Jobify - Students Part Time Jobs</h3>
+                <p>Joignez la communauté des étudiants ou Postez une offre.</p>
+            </div><!-- end title -->
+
+
+            <h3 class="cd-headline clip is-full-width text-center">
+
+                    <div class="btn-ber">
+
+                        <a class="learn_btn hvr-bounce-to-top" href="{% url 'jobify-test' %}">Poster une offre</a>
+                        <a class="get_btn hvr-bounce-to-top" href="{% url 'jobify-registration' %}">Joindre la communauté Etudiant</a>
+                    </div>
+
+            </h3>
+
+
+        </div>
+    </div>
+
+
+
+
+    <div class="copyrights">
+        <div class="container">
+            <div class="footer-distributed">
+				<a href="#"><img src="{% static 'Homepage/images/pp.png'%}" alt="" /></a>
+                <div class="footer-center">
+                    <p class="footer-links">
+                        <a href="#">Home</a>
+                        <a href="#">A propos</a>
+                        <a href="#">Règles et Termes</a>
+                        <a href="#">Comment ça marche?</a>
+                        <a href="#">Faq</a>
+                        <a href="#">Contact-nous</a>
+                    </p>
+                    <p class="footer-company-name">Tous les droits sont réservés. &copy; 2020 <a href="#">Jobify</a>
+					<a href="https://html.design/">AMOA INPT</a></p>
+                </div>
+            </div>
+        </div><!-- end container -->
+    </div><!-- end copyrights -->
+
+    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+
+    <!-- ALL JS FILES -->
+    <script src="{% static 'Homepage/js/all.js'%}"></script>
+	<!-- Camera Slider -->
+	<script src="{% static 'Homepage/js/jquery.mobile.customized.min.js'%}"></script>
+	<script src="{% static 'Homepage/js/jquery.easing.1.3.js'%}"></script>
+	<script src="{% static 'Homepage/js/parallaxie.js'%}"></script>
+	<script src="{% static 'Homepage/js/headline.js'%}"></script>
+	<!-- Contact form JavaScript -->
+    <script src="{% static 'Homepage/js/jqBootstrapValidation.js'%}>"</script>
+    <script src="{% static 'Homepage/js/contact_me.js'%}"></script>
+    <!-- ALL PLUGINS -->
+    <script src="{% static 'Homepage/js/custom.js'%}"></script>
+    <script src="{% static 'Homepage/js/jquery.vide.js'%}"></script>
+
+</body>
+</html>

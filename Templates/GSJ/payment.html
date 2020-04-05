@@ -1,0 +1,272 @@
+{% load static %}
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+     <!-- Site Metas -->
+    <title>Jobify - Students Part Time Jobs</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="{% static 'Homepage/images/jobifyico.ico.png'%}" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="{% static 'Homepage/images/apple-touch-icon.png'%}">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'Homepage/css/bootstrap.min.css'%}">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="{% static 'Homepage/style.css'%}">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="{% static 'Homepage/css/responsive.css'%}">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'Homepage/css/custom.css'%}">
+	<script src="{% static 'Homepage/js/modernizr.js'%}"></script> <!-- Modernizr -->
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+
+        <!-- Modernizr -->
+        <title>GSJ | Payment</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="{% static 'GSJ/payment.css' %}" type="text/css"/>
+        <link href="https://db.onlinewebfonts.com/c/157c6cc36dd65b1b2adc9e7f3329c761?family=Amazon+Ember" rel="stylesheet" type="text/css"/>
+        <script src="{% static 'GSJ/payment.js' %}"></script>
+    </head>
+    
+    <body>
+
+        <section class="body-section" style="background-color: lightgray;">
+            <!-- Navigation -->
+                <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+          <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <img class="img-fluid" src="{% static 'Homepage/images/tt.png'%}" alt="" />
+            </a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+              Menu
+              <i class="fa fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav text-uppercase ml-auto">
+                 <li class="nav-item">
+              <a class="nav-link js-scroll-trigger active" href="{% url 'jobify-home' %}">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="{% url 'jobify-categories' %}">Catégories</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="{% url 'jobify-offre' %}">Offres</a>
+            </li>
+              <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="{% url 'jobify-profils' %}">Profils</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="{% url 'jobify-test' %}">Poster une offre</a>
+            </li>
+
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="{% url 'jobify-registration' %}">Joindre</a>
+            </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+            <br>
+            <br>
+            <div class="main-container">
+                <div class="main-wrapper">
+                    <div class="column infos-wrapper">
+                        <div class="sender-infos">
+                            <div class="img-div">
+                                <img class="sen-img" src="{% static 'GSJ/user-img.png' %}">
+                            </div>
+                            <div class="sen-infos">
+                                <div class="fname-div">{{ getName }}</div>
+                                <div class="email-div">Mr. Buffet Warren</div>
+                                <div class="prof-div">Berkshire Hathaway</div>
+                            </div>
+                        </div>
+                        <div class="service-infos">
+                            <br>
+                            <h1 class="py-for">Paiement de :</h1>
+                            <br>
+                            <div class="ser-infos">
+                                <div class="img-div">
+                                    <img class="ser-img" src="{% static 'GSJ/px.jpg' %}">
+                                </div>
+                                <div class="infos-d">
+                                    <div class="fname-div">BALAH Ilias</div>
+                                    <br>
+                                    <div class="prof-div"> - Développeur Full Stack - </div>
+                                    <div class="prof-div">Service: <span>Website Front-End</span></div>
+
+                                    <div class="date-div">A commencé le: <span>1 Avril 2020</span></div>
+                                        <div class="date-div">termine le: <span>20 Avril 2020</span></div>
+                                    <div class="price-div">Prix: <span>800$ Total</span></div>
+                                    <br>
+
+                                </div>
+                            </div>
+                            <div class="ser-infos">
+                                <div class="img-div">
+                                    <img class="ser-img" src="{% static 'GSJ/xj.jpg' %}">
+                                </div>
+                                <div class="infos-d">
+                                    <div class="fname-div">AZIZI Mounia</div>
+                                    <br>
+                                    <div class="prof-div"> - Graphical Designer - </div>
+                                    <div class="prof-div">Service: <span>Graphical Design</span></div>
+
+                                    <div class="date-div">A commencé le: <span>1 Avril 2020</span></div>
+                                    <div class="date-div">termine le: <span>15 Avril 2020</span></div>
+                                    <div class="price-div">Prix: <span>400$ Total</span></div>
+                                    <br>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="total">
+                            <h1>Total: 1200 $ </h1>
+                        </div>
+                    </div>
+                    <div class="column payment-wrapper">
+                        <form action="#">
+                            <img class="paypal" src="{% static 'GSJ/paypal-main.png' %}">
+                            <div class="input-div">
+                                <div class="icon">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div>
+                                    <input type="text" placeholder="Nom et Prénom" class="input-case" required>
+                                </div>
+                            </div>
+                            <div class="input-div">
+                                <div class="icon">
+                                    <i class="fas fa-credit-card"></i>
+                                </div>
+                                <div>
+                                    <input type="numbers" pattern="[0-9]{4} [0-9]{4} [0-9]{4} [0-9]{4}" title="e.g. xxxx xxxx xxxx xxxx" placeholder="N° de la carte" class="input-case creditCard" required>
+                                </div>
+                            </div>
+                            <div class="input-div">
+                                <div class="icon">
+                                    <i class="fas fa-lock"></i>
+                                </div>
+                                <div>
+                                    <input type="password" placeholder="CVC/CVV" maxlength="3" class="input-case" required>
+                                </div>
+                            </div>
+                            <div class="date-field">
+                                <div class="d1">Date d'expiration :</div>
+                                <div class="dateex">
+                                    <select name="expiremounth" class="exm">
+                                        <option value="none" selected disabled hidden>{% now "M" %}</option>
+                                        <option value="">January</option>
+                                        <option value="">February</option>
+                                        <option value="">March</option>
+                                        <option value="">April</option>
+                                        <option value="">May</option>
+                                        <option value="">June</option>
+                                        <option value="">July</option>
+                                        <option value="">August</option>
+                                        <option value="">September</option>
+                                        <option value="">October</option>
+                                        <option value="">November</option>
+                                        <option value="">December</option></select>
+                                    <select name="expireyear" class="exy">
+                                        <option value="none" selected disabled hidden>{% now "Y" %}</option>
+                                        <option value="">2020</option>
+                                        <option value="">2021</option>
+                                        <option value="">2022</option>
+                                        <option value="">2023</option>
+                                        <option value="">2024</option>
+                                        <option value="">2025</option>
+                                        <option value="">2026</option>
+                                        <option value="">2027</option>
+                                        <option value="">2028</option>
+                                        <option value="">2029</option>
+                                        <option value="">2030</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <br>
+                            <br>
+                            <br>
+                            <div class="btn-pay">
+                                <a class="learn_btn hvr-bounce-to-top" href="{% url 'jobify-confirmationpayment' %}">Confirmer</a>
+                            </div>
+
+
+
+
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="footer-section">
+            <div class="copyrights">
+        <div class="container">
+            <div class="footer-distributed">
+				<a href="#"><img src="{% static 'Homepage/images/pp.png'%}" alt="" /></a>
+                <div class="footer-center">
+                    <p class="footer-links">
+                        <a href="#">Home</a>
+                        <a href="#">A propos</a>
+                        <a href="#">Règles et Termes</a>
+                        <a href="#">Comment ça marche?</a>
+                        <a href="#">Faq</a>
+                        <a href="#">Contact-nous</a>
+                    </p>
+                    <p class="footer-company-name">Tous les droits sont réservés. &copy; 2020 <a href="#">Jobify</a>
+					<a href="https://html.design/">AMOA INPT</a></p>
+                </div>
+            </div>
+        </div><!-- end container -->
+    </div><!-- end copyrights -->
+
+        </section>
+
+        <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+         <script src="{% static 'Homepage/js/all.js'%}"></script>
+	<!-- Camera Slider -->
+	<script src="{% static 'Homepage/js/jquery.mobile.customized.min.js'%}"></script>
+	<script src="{% static 'Homepage/js/jquery.easing.1.3.js'%}"></script>
+	<script src="{% static 'Homepage/js/parallaxie.js'%}"></script>
+	<script src="{% static 'Homepage/js/headline.js'%}"></script>
+	<!-- Contact form JavaScript -->
+    <script src="{% static 'Homepage/js/jqBootstrapValidation.js'%}>"</script>
+    <script src="{% static 'Homepage/js/contact_me.js'%}"></script>
+    <!-- ALL PLUGINS -->
+    <script src="{% static 'Homepage/js/custom.js'%}"></script>
+    <script src="{% static 'Homepage/js/jquery.vide.js'%}"></script>
+        <!-- ALL JS FILES -->
+        <script src="{% static 'GSJ/onnext/js/all.js' %}"></script>
+        <!-- Camera Slider -->
+        <script src="{% static 'GSJ/onnext/js/jquery.mobile.customized.min.js' %}"></script>
+        <script src="{% static 'GSJ/onnext/js/jquery.easing.1.3.js' %}"></script> 
+        <script src="{% static 'GSJ/onnext/js/parallaxie.js' %}"></script>
+        <script src="{% static 'GSJ/onnext/js/headline.js' %}"></script>
+        <!-- Contact form JavaScript -->
+        <script src="{% static 'GSJ/onnext/js/jqBootstrapValidation.js' %}"></script>
+        <script src="{% static 'GSJ/onnext/js/contact_me.js' %}"></script>
+        <!-- ALL PLUGINS -->
+        <script src="{% static 'GSJ/onnext/js/custom.js' %}"></script>
+        <script src="{% static 'GSJ/onnext/js/jquery.vide.js' %}"></script>
+        
+    </body>
+</html>

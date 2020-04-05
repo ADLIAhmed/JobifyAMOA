@@ -1,0 +1,173 @@
+a {
+  color: #37A;
+  opacity: 0.9;
+}
+
+.navbar-fixed nav {
+  background-color: #37A;
+  opacity: 0.9;
+}
+.side-nav li:hover{
+  background-color: #37A;
+    
+}
+.btn ,.btn-large{
+  background-color: #37A;
+}
+.btn:hover, .btn-large:hover {
+  background-color: #37A;
+}
+.home-title span{
+  color: #37A;
+}
+.about-inner-right>h3{
+  color: #37A;
+}
+.personal-information>h3{
+  color: #37A;
+}
+.title{
+  color: #37A;
+}
+
+.card-subtitle {
+  color: #37A;
+}
+.portfolio-top{
+  background-color: #37A;
+}
+.filter {
+  color: #37A;
+}
+.filter:focus{
+  background-color: #37A;
+}
+#portfolio-list .mix:hover > a::before {
+  background-color: #37A;
+}
+.counter{
+  color: #37A;
+}
+
+.pro-bar-container.color-wisteria {
+  border-color: #37A;
+}
+
+.pro-bar.color-amethyst {
+  background-color: #37A;
+}
+.call-to-about i{
+  color: #37A;
+}
+
+.blog-post .card-action a{
+  color: #37A;
+}
+
+.post-comment:hover{
+  color: #37A !important;
+}
+
+.readmore-btn:hover{
+  background-color: #37A;
+}
+#experience{
+  background-color: #37A;
+}
+
+.card-title i {
+  color: #37A;
+}
+.customNavigation i{
+  color: #37A;
+}
+#testimonial{
+  background-color: #37A;  
+}
+.testimonial-content h3 {
+  color: #37A;
+}
+.footer-top{
+  background-color:#37A; 
+}
+input[type="text"]:focus:not([readonly]) + label,
+input[type="password"]:focus:not([readonly]) + label,
+input[type="email"]:focus:not([readonly]) + label,
+input[type="url"]:focus:not([readonly]) + label,
+input[type="time"]:focus:not([readonly]) + label,
+input[type="date"]:focus:not([readonly]) + label,
+input[type="datetime-local"]:focus:not([readonly]) + label,
+input[type="tel"]:focus:not([readonly]) + label,
+input[type="number"]:focus:not([readonly]) + label,
+input[type="search"]:focus:not([readonly]) + label,
+textarea.materialize-textarea:focus:not([readonly]) + label {
+  color: #37A;
+}
+input[type="text"]:focus:not([readonly]),
+input[type="password"]:focus:not([readonly]),
+input[type="email"]:focus:not([readonly]),
+input[type="url"]:focus:not([readonly]),
+input[type="time"]:focus:not([readonly]),
+input[type="date"]:focus:not([readonly]),
+input[type="datetime-local"]:focus:not([readonly]),
+input[type="tel"]:focus:not([readonly]),
+input[type="number"]:focus:not([readonly]),
+input[type="search"]:focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #37A;
+  box-shadow: 0 1px 0 0 #37A;
+}
+.submit-btn{
+  color: #37A;  
+}
+.submit-btn:hover,
+.submit-btn:focus{
+  background-color: #37A;
+}
+.overlay-header{
+  background-color: #37A;
+}
+.blog-content blockquote {
+  border-left: 5px solid #37A;
+}
+.share-area h4 i,
+.tag-area h4 i {
+  color: #37A;
+}
+.share-area a:hover,
+.share-area a:focus{
+  color: #37A;
+}
+.author-comments {
+  background-color: #37A !important;
+}
+.reply-btn:hover{
+  background-color: #37A; 
+}
+.pagination li.active{
+  background-color: #37A;
+}
+.card .card-action a {
+  color: #37A;  
+}
+.tagcloud a:hover,
+.tagcloud a:focus{
+  color: #fff;
+  background-color: #37A;
+  border-color: #37A;
+}
+.prev-post:hover,
+.prev-post:focus,
+.next-post:hover,
+.next-post:focus{
+  background-color: #37A;
+}
+.submit-btn{
+  color: #37A;  
+}
+.side-nav li:hover,
+.side-nav li.active {
+  background-color: #37A; 
+}
+.progress .indeterminate {
+  background-color: #37A;

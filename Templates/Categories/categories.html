@@ -1,0 +1,563 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+     <!-- Site Metas -->
+    <title>Jobify - Students Part Time Jobs</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="{% static 'Homepage/images/jobifyico.ico.png'%}" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="{% static 'Homepage/images/apple-touch-icon.png'%}">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'Homepage/css/bootstrap.min.css'%}">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="{% static 'Categories/style.css'%}">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="{% static 'Homepage/css/responsive.css'%}">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'Homepage/css/custom.css'%}">
+	<script src="{% static 'Homepage/js/modernizr.js'%}"></script> <!-- Modernizr -->
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Jobify</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'Categories/fontawesome-5.5/css/all.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'Categories/slick/slick.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'Categories/slick/slick-theme.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'Categories/categories/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'Categories/categories/main.css' %}">
+<!--
+Tooplate 2117 Infinite Loop
+https://www.tooplate.com/view/2117-infinite-loop
+-->
+
+  </head>
+  <body>
+    <!-- Hero section -->
+
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+			<img class="img-fluid" src="{% static 'Homepage/images/tt.png'%}" alt="" />
+		</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger active" href="{% url 'jobify-home' %}">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#whatwedo">Catégories</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="{% url 'jobify-offre' %}">Offres</a>
+            </li>
+              <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="{% url 'jobify-profils' %}">Profils</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="{% url 'jobify-test' %}">Poster une offre</a>
+            </li>
+
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="{% url 'jobify-registration' %}">Joindre</a>
+            </li>
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="{% url 'jobify-login' %}">Connexion</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section id="home" class="main-banner parallaxie" style="background: url('{%static "Categories/img/cto.jpg"%}')";>
+		<div class="heading">
+			<h1>Jobify, une diversité de service</h1>
+			<h3 class="cd-headline clip is-full-width">
+				<span>Trouver votre catégorie</span>
+
+			</h3>
+		</div>
+	</section>
+      <div class="tm-next tm-intro-next">
+        <a href="#whatwedo" class="text-center tm-down-arrow-link">
+
+        </a>
+      </div>
+
+
+    <section id="whatwedo" class="tm-section-pad-top">
+
+      <div class="container">
+
+            <div class="row tm-content-box"><!-- first row -->
+                <div class="col-lg-12 col-xl-12">
+                    <div class="tm-intro-text-container">
+                        <h2 class="tm-text-primary mb-4 tm-section-title">Ce que nous proposons </h2>
+                        <p class="mb-4 tm-intro-text">
+                          Jobify vous donne l'opportunité de partager votre besoin , vous trouverez une personne adaptée au type de service recherché avec un seul clic , il vous suffit de consulter les diférents profils dans la catégorie qui vous intéresse .</p>
+                    </div>
+                </div>
+
+            </div><!-- first row -->
+
+            <div class="row tm-content-box"><!-- second row -->
+        		<div class="col-lg-1">
+                    <i class="far fa-3x fa-chart-bar text-center tm-icon"></i>
+                </div>
+                <div class="col-lg-5">
+                    <div class="tm-intro-text-container">
+                        <h2 class="tm-text-primary mb-4">Développement web</h2>
+                        <p class="mb-4 ">
+                          Dans cette catégorie, vous trouvez des étudiants développeurs Web Front-End, Back-end et Full Stack.
+                        </p><br><br>
+                        <h2 class="subcat">  - Front-End <br> <br>- Back-End <br> <br>- Hébergement</h2>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-1">
+                    <i class="far fa-3x fa-comment-alt text-center tm-icon"></i>
+                </div>
+                <div class="col-lg-5">
+                    <div class="tm-intro-text-container">
+                        <h2 class="tm-text-primary mb-4">Développement mobile</h2>
+                        <p class="mb-4 ">
+                          Dans cette catégorie, vous trouvez des étudiants développeurs Mobile Android, IOS et autres</p>
+                        <br><br>
+                           <h2 class="subcat">    - Développement Android <br> <br>- Développement IOS <br> <br>- Mobile App Design</h2>
+                    </div>
+                </div>
+
+
+            </div><!-- second row -->
+
+            <div class="row tm-content-box"><!-- third row -->
+        		<div class="col-lg-1">
+                    <i class="fas fa-3x fa-fingerprint text-center tm-icon"></i>
+                </div>
+                <div class="col-lg-5">
+                    <div class="tm-intro-text-container">
+                        <h2 class="tm-text-primary mb-4">Finance et Marketing</h2>
+                        <p class="mb-4 ">
+                      Dans cette catégorie, vous trouvez des services en Marketing digital, en commerce éléctronique.etc </p>
+                        <br><br>
+                           <h2 class="subcat">    - Social Media Marketing <br> <br>- Web Traffic <br> <br>- E-commerce Marketing</h2>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-1">
+                    <i class="fas fa-3x fa-users text-center tm-icon"></i>
+                </div>
+                <div class="col-lg-5">
+                    <div class="tm-intro-text-container">
+                      <h2 class="tm-text-primary mb-4">Design</h2>
+                        <p class="mb-4 ">
+                      Dans cette catégorie, vous trouvez des étudiants designer des applications et portraits  </p>
+                         <br><br>
+                           <h2 class="subcat">    - Logo Design <br> <br>- Graphical Design <br> <br>- Photoshop Editing</h2>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div class="row tm-content-box"><!-- second row -->
+        		<div class="col-lg-1">
+                    <i class="far fa-3x fa-chart-bar text-center tm-icon"></i>
+                </div>
+                <div class="col-lg-5">
+                    <div class="tm-intro-text-container">
+                        <h2 class="tm-text-primary mb-4">Traduction et Littérature</h2>
+                        <p class="mb-4 ">
+                            Dans cette catégorie, vous trouvez des étudiants offrant des services de traductions de vos thèses, écriture d'articles
+                        </p><br><br>
+                        <h2 class="subcat">    - UX Writing <br> <br>- Blogs et Articles <br> <br>- Traduction</h2>
+                    </div>
+                </div>
+
+                <div class="col-lg-1">
+                    <i class="far fa-3x fa-comment-alt text-center tm-icon"></i>
+                </div>
+                <div class="col-lg-5">
+                    <div class="tm-intro-text-container">
+                        <h2 class="tm-text-primary mb-4">Divers</h2>
+                        <p class="mb-4 ">
+                          vous cherchez un service autre que ceux proposés dans nos catégories</p>
+                        <br><br>
+                        <h2 class="subcat">    - Assistance  <br> <br>- Baby-Sitting <br> <br>- Livraison</h2>
+                    </div>
+                </div>
+
+            </div><!-- third row -->
+
+        </div>
+
+    </section>
+
+
+
+    <div id="team" class="section wb">
+		<div class="container">
+			<div class="section-title text-center">
+				<h3>Nos Profils les plus recommandés</h3>
+				<p>Parcourez ici nos profils les plus recommandés .</p>
+			</div><!-- end title -->
+
+			<div class="row">
+				<div class="col-md-4 col-sm-6 col-lg-4">
+					<div class="our-team">
+						<div class="pic">
+							<img src="{% static 'Categories/img/testimonial-img-01.jpg'%}">
+						</div>
+						<div class="team-content">
+							<h3 class="title">BANLAMLIH Zineb</h3>
+							<span class="post">Designer </span>
+                            <p>4 ans d'experience dans le domaine du design , maitrise photoshop et les logiciels Adobe</p>
+
+						</div>
+					</div>
+				</div>
+                <div class="col-md-4 col-sm-6 col-lg-4">
+					<div class="our-team">
+						<div class="pic">
+							<img src="{% static 'Categories/img/testimonial-img-03.jpg'%}">
+						</div>
+						<div class="team-content">
+							<h3 class="title">IDRISSI Chaimae</h3>
+							<span class="post">Designer</span>
+                            <p>Possédant une fibre artistique, Chaimae est reconnue par sa créativité dans le domaine du design , elle est lauréate de l'ENA avec 9 ans d'expérience</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4 col-sm-6 col-lg-4">
+					<div class="our-team">
+						<div class="pic">
+							<img src="{% static 'Categories/img/testimonial-img-02.jpg'%}">
+						</div>
+						<div class="team-content">
+							<h3 class="title">AZIZI Mounia</h3>
+							<span class="post">Développeur Full Stack</span>
+                            <p>7 ans d'expérience dans le domaine du developpement web , Créatrice de plusieus sites web.</p>
+						</div>
+					</div>
+				</div>
+
+
+
+				<div class="col-md-4 col-sm-6 col-lg-4">
+					<div class="our-team">
+						<div class="pic">
+							<img src="{% static 'Categories/img/wo.jpg'%}">
+						</div>
+						<div class="team-content">
+							<h3 class="title">FARISS Rim</h3>
+							<span class="post"> Designer </span>
+                            <p>3 ans d'experience dans le Design graphique et AI editing.</p>
+
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4 col-sm-6 col-lg-4">
+					<div class="our-team">
+						<div class="pic">
+							<img src="{% static 'Homepage/uploads/ili.jpg'%}">
+						</div>
+						<div class="team-content">
+							<h3 class="title">BALAH ILIAS</h3>
+							<span class="post">Développeur Full Stack </span>
+                            <p>développeur Web Front-End et Back-end reconnu par sa créativité et productivité.</p>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="col-md-4 col-sm-6 col-lg-4">
+					<div class="our-team">
+						<div class="pic">
+							<img src="{% static 'Categories/img/xo.jpg'%}">
+						</div>
+						<div class="team-content">
+							<h3 class="title">XXXX YYYY</h3>
+							<span class="post">Marketing digital</span>
+                            <p>5 ans d'expérience dans le marketing digital et l'ecommerce marketing.</p>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+    <!-- Contact -->
+    <div id="pricing" class="section lb">
+		<div class="container">
+            <br><br><br>
+			<div class="section-title text-center">
+                <h3>Jobify - Students Part Time Jobs</h3>
+                <p>Parcourez les offres et joingnez notre communauté</p>
+            </div><!-- end title -->
+
+
+            <h3 class="cd-headline clip is-full-width text-center">
+
+                     <div class="btn-ber">
+
+                        <a class="learn_btn hvr-bounce-to-top" href="{% url 'jobify-login' %}">Poster une offre</a>
+                        <a class="get_btn hvr-bounce-to-top" href="{% url 'jobify-offre' %}">Voir les offres</a>
+                    </div>
+
+            </h3>
+
+
+        </div>
+    </div>
+
+    <script src="{% static 'Categories/js/jquery-1.9.1.min.js'%}"></script>
+    <script src="{% static 'Categories/slick/slick.min.js' %}"></script>
+    <script src="{% static 'Categories/magnific-popup/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'Categories/js/easing.min.js' %}"></script>
+    <script src="{% static 'Categories/js/jquery.singlePageNav.min.js'%}"></script>
+    <script src="{% static 'Categories/js/bootstrap.min.js'%}"></script>
+    <script>
+
+      function getOffSet(){
+        var _offset = 450;
+        var windowHeight = window.innerHeight;
+
+        if(windowHeight > 500) {
+          _offset = 400;
+        }
+        if(windowHeight > 680) {
+          _offset = 300
+        }
+        if(windowHeight > 830) {
+          _offset = 210;
+        }
+
+        return _offset;
+      }
+
+      function setParallaxPosition($doc, multiplier, $object){
+        var offset = getOffSet();
+        var from_top = $doc.scrollTop(),
+          bg_css = 'center ' +(multiplier * from_top - offset) + 'px';
+        $object.css({"background-position" : bg_css });
+      }
+
+      // Parallax function
+      // Adapted based on https://codepen.io/roborich/pen/wpAsm
+      var background_image_parallax = function($object, multiplier, forceSet){
+        multiplier = typeof multiplier !== 'undefined' ? multiplier : 0.5;
+        multiplier = 1 - multiplier;
+        var $doc = $(document);
+        // $object.css({"background-attatchment" : "fixed"});
+
+        if(forceSet) {
+          setParallaxPosition($doc, multiplier, $object);
+        } else {
+          $(window).scroll(function(){
+            setParallaxPosition($doc, multiplier, $object);
+          });
+        }
+      };
+
+      var background_image_parallax_2 = function($object, multiplier){
+        multiplier = typeof multiplier !== 'undefined' ? multiplier : 0.5;
+        multiplier = 1 - multiplier;
+        var $doc = $(document);
+        $object.css({"background-attachment" : "fixed"});
+
+        $(window).scroll(function(){
+          if($(window).width() > 768) {
+            var firstTop = $object.offset().top,
+                pos = $(window).scrollTop(),
+                yPos = Math.round((multiplier * (firstTop - pos)) - 186);
+
+            var bg_css = 'center ' + yPos + 'px';
+
+            $object.css({"background-position" : bg_css });
+          } else {
+            $object.css({"background-position" : "center" });
+          }
+        });
+      };
+
+      $(function(){
+        // Hero Section - Background Parallax
+        background_image_parallax($(".tm-parallax"), 0.30, false);
+        background_image_parallax_2($("#contact"), 0.80);
+        background_image_parallax_2($("#testimonials"), 0.80);
+
+        // Handle window resize
+        window.addEventListener('resize', function(){
+          background_image_parallax($(".tm-parallax"), 0.30, true);
+        }, true);
+
+        // Detect window scroll and update navbar
+        $(window).scroll(function(e){
+          if($(document).scrollTop() > 120) {
+            $('.tm-navbar').addClass("scroll");
+          } else {
+            $('.tm-navbar').removeClass("scroll");
+          }
+        });
+
+        // Close mobile menu after click
+        $('#tmNav a').on('click', function(){
+          $('.navbar-collapse').removeClass('show');
+        })
+
+        // Scroll to corresponding section with animation
+        $('#tmNav').singlePageNav({
+          'easing': 'easeInOutExpo',
+          'speed': 600
+        });
+
+        // Add smooth scrolling to all links
+        // https://www.w3schools.com/howto/howto_css_smooth_scroll.asp
+        $("a").on('click', function(event) {
+          if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 600, 'easeInOutExpo', function(){
+              window.location.hash = hash;
+            });
+          } // End if
+        });
+
+        // Pop up
+        $('.tm-gallery').magnificPopup({
+          delegate: 'a',
+          type: 'image',
+          gallery: { enabled: true }
+        });
+
+        $('.tm-testimonials-carousel').slick({
+          dots: true,
+          prevArrow: false,
+          nextArrow: false,
+          infinite: false,
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          responsive: [
+            {
+              breakpoint: 992,
+              settings: {
+                slidesToShow: 2
+              }
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 2
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                  slidesToShow: 1
+              }
+            }
+          ]
+        });
+
+        // Gallery
+        $('.tm-gallery').slick({
+          dots: true,
+          infinite: false,
+          slidesToShow: 5,
+          slidesToScroll: 2,
+          responsive: [
+          {
+            breakpoint: 1199,
+            settings: {
+              slidesToShow: 4,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 991,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 767,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
+        });
+      });
+    </script>
+    <div class="copyrights">
+        <div class="container">
+            <div class="footer-distributed">
+				<a href="#"><img src="{% static 'Homepage/images/pp.png'%}" alt="" /></a>
+                <div class="footer-center">
+                    <p class="footer-links">
+                        <a href="#">Home</a>
+                        <a href="#">A propos</a>
+                        <a href="#">Règles et Termes</a>
+                        <a href="#">Comment ça marche?</a>
+                        <a href="#">Faq</a>
+                        <a href="#">Contact-nous</a>
+                    </p>
+                    <p class="footer-company-name">Tous les droits sont réservés. &copy; 2020 <a href="#">Jobify</a>
+					<a href="https://html.design/">AMOA INPT</a></p>
+                </div>
+            </div>
+        </div><!-- end container -->
+    </div><!-- end copyrights -->
+
+    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+
+    <!-- ALL JS FILES -->
+    <script src="{% static 'Homepage/js/all.js'%}"></script>
+	<!-- Camera Slider -->
+	<script src="{% static 'Homepage/js/jquery.mobile.customized.min.js'%}"></script>
+	<script src="{% static 'Homepage/js/jquery.easing.1.3.js'%}"></script>
+	<script src="{% static 'Homepage/js/parallaxie.js'%}"></script>
+	<script src="{% static 'Homepage/js/headline.js'%}"></script>
+	<!-- Contact form JavaScript -->
+    <script src="{% static 'Homepage/js/jqBootstrapValidation.js'%}>"</script>
+    <script src="{% static 'Homepage/js/contact_me.js'%}"></script>
+    <!-- ALL PLUGINS -->
+    <script src="{% static 'Homepage/js/custom.js'%}"></script>
+    <script src="{% static 'Homepage/js/jquery.vide.js'%}"></script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+body {
+    width: 100%;
+    display: inline-block;
+}
+
+.body-section {
+    height: auto;
+    background-color: lightgray;
+}
+.footer-section {
+    height: auto;
+    background-color: lightgray;
+}
+
+section {
+    display: inline-block;
+    width: 100%;
+}
+nav {
+    opacity: rgba(0,0,0,0.9);
+}

@@ -1,0 +1,322 @@
+
+.main-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.main-wrapper{
+    width: 100%;
+    height: auto;
+    box-shadow: 0 3px 100px rgba(0,0,0,0.2);
+    border-radius: 50px 0 50px 0;
+    display: flex;
+    margin: 100px;
+    max-width: 100vh;
+    justify-content: center;
+}
+.column{
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    height: 100%;
+}
+
+/* --------------------------------- Payment Wrapper ------------------------------ */
+.payment-wrapper{
+    width: 50%;
+    background-color: #333333;
+    background-size: cover;
+    background-blend-mode: lighten;
+    border-radius: 0 50px 50px 0;
+    min-width: 60vh;
+    max-width: 50vh;
+}
+
+.paypal{
+    width: 114.5%;
+    position: relative;
+    left: -8.5%;
+}
+form {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+
+
+.input-div {
+    position: relative;
+    display: grid;
+    grid-template-columns: 7% 93%;
+    margin: 10px 0;
+    padding: 5px;
+    border-bottom: 1px solid lightgray;
+}
+
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon i {
+    color: lightgray;
+    transition: .3s;
+}
+.input-div > div {
+    position: relative;
+    height: 35px;
+}
+
+input {
+    color: lightgray;
+}
+
+.input-case {
+    position: absolute;
+    background: none;
+    border: none;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    padding: 0.5rem 0.7rem;
+}
+.date-field {
+    display: inline-block;
+    width: 100%;
+}
+.dateex {
+    display: inline-flex;
+    width: calc(100% - 10px);
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.d1 {
+    font-family: monospace;
+    font-weight: 600;
+    font-size: 12px;
+    width: 100%;
+    padding: 11px 0;
+    color: gray;
+}
+.exm {
+    float: left;
+    width: calc(50% - 5px);
+    margin-right: 19px;
+}
+.exy {
+    float: right;
+    width: calc(40% - 5px);
+    margin-left: 19px;
+}
+
+select {
+    font-family: monospace;
+    background: transparent;
+    padding: 6px 0;
+    color: gray;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+}
+select:hover {
+    background: transparent;
+    color:lightblue;
+    transition: 0.5s;
+    border: 1px solid lightblue;
+}
+option {
+    color: gray;
+    font-family: monospace;
+    background: azure;
+    border: 1px solid gray;
+    animation-play-state: running;
+
+}
+.btn-pay button {
+    padding: 5px 10px;
+    font-weight: 700;
+    font-family: inherit;
+    text-transform: uppercase;
+    border: 1px solid lightgray;
+    border-radius: 100px;
+    background: transparent;
+    color: lightgray;
+    margin-top: 20px;
+    cursor: pointer;
+    width: 100%;
+
+}
+.btn-pay button:hover{
+    border: 1px solid lightblue;
+    color: lightblue;
+    box-shadow: 0px 0px 1px 1px lightblue, 0px 0px 1px 1px lightblue;
+    transition: 0.5s;
+    background-position: right;
+}
+
+/* --------------------------------- Infos Wrapper ------------------------------ */
+
+.infos-wrapper{
+    width: 70vh;
+    border-radius: 50px 0 0 50px;
+    background-color: white;
+    padding: 5px 20px 5px 20px;
+    min-width: 80vh;
+    max-width: 70vh
+}
+.title{
+    font-size: 40px;
+    font-weight: 500;
+    color: black;
+    text-align: center;
+    position: relative;
+}
+.sender-infos, .service-infos {
+    width: 100%;
+    display: flex;
+    padding: 5px;
+    margin: 3px;
+    border-bottom: 1px solid gray;
+}
+.sender-infos .img-div {
+    width: 80px;
+    height: 80px;
+    padding: 5px;
+}
+.sen-img{
+    width: 65px;
+    height: 65px;
+    border: 1px solid lightblue;
+    border-radius: 100%;
+}
+.sen-infos {
+    position: relative;
+    margin-left: 1px;
+    width: 100%;
+    padding-top: 13px;
+    padding-bottom: 10px;
+}
+.sen-infos .fname-div {
+    font-family: "Amazon Ember",sans-serif;
+    font-size: 15px!important;
+    line-height: 19px!important;
+    color: midnightblue;
+    width: 100%;
+    height: 17px;
+}
+.sen-infos .email-div {
+    font-family: "Amazon Ember",sans-serif;
+
+    font-size: 20px!important;
+    line-height: 19px!important;
+    color: gray;
+    width: 100%;
+    height: 17px;
+}
+.sen-infos .prof-div {
+    font-family: "Amazon Ember",sans-serif;
+    font-size: 12px!important;
+    line-height: 19px!important;
+    color: gray;
+    width: 100%;
+    height: 17px;
+}
+
+.service-infos {
+    display: inline-block;
+}
+
+
+.service-infos h1 {
+    font-family: "Amazon Ember",sans-serif;
+    font-size: 19px!important;
+    line-height: 19px!important;
+    color: gray;
+}
+.ser-infos {
+    padding-left: 10px;
+    display: flex;
+}
+
+.ser-infos .fname-div {
+    font-family: "Amazon Ember",sans-serif;
+    font-size: 18px!important;
+    line-height: 19px!important;
+    color: #3377aa;
+    width: 100%;
+    margin-left: 60px;
+    height: 19px;
+}
+.infos-d {
+    display: inline-block;
+}
+
+
+.infos-d .prof-div, .serv-div {
+    font-family: "Amazon Ember",sans-serif;
+    font-size: 13px!important;
+    line-height: 19px!important;
+    margin-right: 20px;
+    margin-left: 40px;
+    color: gray;
+    width: 100%;
+    height: 19px;
+}
+
+.infos-d .price-div {
+    font-family: "Amazon Ember",sans-serif;
+    font-size: 13px!important;
+    line-height: 19px!important;
+    color: gray;
+    margin-left: 60px;
+    width: 100%;
+    height: 20px;
+}
+.infos-d .date-div {
+    font-family: "Amazon Ember",sans-serif;
+    font-size: 13px!important;
+    line-height: 19px!important;
+    color: gray;
+    width: 100%;
+    margin-left: 35px;
+    height: 19px;
+}
+
+.infos-d span{
+    color: black;
+}
+
+.total {
+    padding: 10px;
+    color: black;
+}
+.ser-infos .img-div {
+    width:40%;
+}
+.ser-img {
+    padding: 4px;
+    width: 100%;
+    height: 15vh;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width:900px){
+    .main-wrapper .column{
+        flex: 1;
+        width: 100% !important;
+    }
+}
+@media only screen and (max-width:600px){
+    .main-wrapper{
+        flex-flow: column wrap;
+    }
+}

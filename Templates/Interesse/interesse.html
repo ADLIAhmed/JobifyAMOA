@@ -1,0 +1,242 @@
+{%  load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="{% static 'Test/images/icons/favicon.ico' %}"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'Test/vendor/bootstrap/css/bootstrap.min.css'%}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'Test/fonts/font-awesome-4.7.0/css/font-awesome.min.css'%}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'Test/fonts/iconic/css/material-design-iconic-font.min.css'%} ">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'Test/vendor/animate/animate.css'%}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'Test/vendor/css-hamburgers/hamburgers.min.css'%}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static ' Test/vendor/animsition/css/animsition.min.css'%}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'Test/vendor/select2/select2.min.css'%}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'Test/vendor/daterangepicker/daterangepicker.css'%}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'Test/vendor/noui/nouislider.min.css'%}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{% static 'Test/css/util.css'%}">
+	<link rel="stylesheet" type="text/css" href="{% static 'Test/css/main.css'%}">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+     <!-- Site Metas -->
+    <title>Jobify - Students Part Time Jobs</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="{% static 'Homepage/images/jobifyico.ico.png'%}" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="{% static 'Homepage/images/apple-touch-icon.png'%}">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'Homepage/css/bootstrap.min.css'%}">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="{% static 'Test/css/style.css'%}">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="{% static 'Homepage/css/responsive.css'%}">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'Homepage/css/custom.css'%}">
+	<script src="{% static 'Homepage/js/modernizr.js'%}"></script> <!-- Modernizr -->
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<!--===============================================================================================-->
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#">
+			<img class="img-fluid" src="{% static 'Homepage/images/tt.png'%}" alt="" />
+		</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger active" href="{% url 'jobify-home' %}">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="{% url 'jobify-categories' %}">Catégories</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="{% url 'jobify-offre' %}">Offres</a>
+            </li>
+              <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="{% url 'jobify-profils' %}">Profils</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="{% url 'jobify-test' %}">Poster une offre</a>
+            </li>
+
+			<li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="{% url 'jobify-registration' %}">Joindre</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+	<div class="container-contact100">
+		<div class="wrap-contact100">
+			<form class="contact100-form validate-form">
+				<span class="contact100-form-title">
+					Envoyer une suggestion - <span class="jobify"> Jobify</span>
+				</span>
+                <div class="wrap-input100 validate-input bg0 rs1-alert-validate" data-validate = "Proposer un prix s'il vous plait">
+					<span class="label-input100">PRIX DEMANDE</span>
+					<textarea class="input100" name="message" placeholder="Proposer un prix pour votre service"></textarea>
+				</div>
+                <div class="wrap-input100 validate-input bg0 rs1-alert-validate" data-validate = "Parler de votre expérience s'il vous plait">
+					<span class="label-input100">VOTRE EXPERIENCE</span>
+					<textarea class="input100" name="message" placeholder="Parler de votre expérience.."></textarea>
+				</div>
+
+				<div class="wrap-input100 validate-input bg0 rs1-alert-validate" data-validate = "Pourquoi vous?">
+					<span class="label-input100">Pourquoi vous?</span>
+					<textarea class="input100" name="message" placeholder="Pourquoi vous êtes le meilleur choix.."></textarea>
+				</div>
+
+				<div class="container-contact100-form-btn">
+					 <a class="contact100-form-btn" href="{% url 'jobify-confirmationinteresse' %}">
+
+                           Confirmer la suggestion
+
+                     </a>
+				</div>
+			</form>
+		</div>
+	</div>
+
+
+
+<!--===============================================================================================-->
+	<script src="{% static 'Test/vendor/jquery/jquery-3.2.1.min.js'%}"></script>
+<!--===============================================================================================-->
+	<script src="{% static 'Test/vendor/animsition/js/animsition.min.js'%}"></script>
+<!--===============================================================================================-->
+	<script src="{% static 'Test/vendor/bootstrap/js/popper.js'%}"></script>
+	<script src="{% static 'Test/vendor/bootstrap/js/bootstrap.min.js'%}"></script>
+<!--===============================================================================================-->
+	<script src="{% static 'Test/vendor/select2/select2.min.js'%}"></script>
+	<script>
+		$(".js-select2").each(function(){
+			$(this).select2({
+				minimumResultsForSearch: 20,
+				dropdownParent: $(this).next('.dropDownSelect2')
+			});
+
+
+			$(".js-select2").each(function(){
+				$(this).on('select2:close', function (e){
+					if($(this).val() == "Please chooses") {
+						$('.js-show-service').slideUp();
+					}
+					else {
+						$('.js-show-service').slideUp();
+						$('.js-show-service').slideDown();
+					}
+				});
+			});
+		})
+	</script>
+<!--===============================================================================================-->
+	<script src="{% static 'Test/vendor/daterangepicker/moment.min.js'%}"></script>
+	<script src="{% static 'Test/vendor/daterangepicker/daterangepicker.js'%}"></script>
+<!--===============================================================================================-->
+	<script src="{% static 'Test/vendor/countdowntime/countdowntime.js'%}"></script>
+<!--===============================================================================================-->
+	<script src="{% static 'Test/vendor/noui/nouislider.min.js'%}"></script>
+	<script>
+	    var filterBar = document.getElementById('filter-bar');
+
+	    noUiSlider.create(filterBar, {
+	        start: [ 100, 1500 ],
+	        connect: true,
+	        range: {
+	            'min': 1,
+	            'max': 5000
+	        }
+	    });
+
+	    var skipValues = [
+	    document.getElementById('value-lower'),
+	    document.getElementById('value-upper')
+	    ];
+
+	    filterBar.noUiSlider.on('update', function( values, handle ) {
+	        skipValues[handle].innerHTML = Math.round(values[handle]);
+	        $('.contact100-form-range-value input[name="from-value"]').val($('#value-lower').html());
+	        $('.contact100-form-range-value input[name="to-value"]').val($('#value-upper').html());
+	    });
+	</script>
+<!--===============================================================================================-->
+	<script src="{% static 'Test/js/main.js'%}"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script>
+    <div class="copyrights">
+        <div class="container">
+            <div class="footer-distributed">
+				<a href="#"><img src="{% static 'Homepage/images/pp.png'%}" alt="" /></a>
+                <div class="footer-center">
+                    <p class="footer-links">
+                        <a href="#">Home</a>
+                        <a href="#">A propos</a>
+                        <a href="#">Règles et Termes</a>
+                        <a href="#">Comment ça marche?</a>
+                        <a href="#">Faq</a>
+                        <a href="#">Contact-nous</a>
+                    </p>
+                    <p class="footer-company-name">Tous les droits sont réservés. &copy; 2020 <a href="#">Jobify</a>
+					<a href="https://html.design/">AMOA INPT</a></p>
+                </div>
+            </div>
+        </div><!-- end container -->
+    </div><!-- end copyrights -->
+
+    <a href="#" id="scroll-to-top" class="dmtop global-radius"><i class="fa fa-angle-up"></i></a>
+
+    <!-- ALL JS FILES -->
+    <script src="{% static 'Homepage/js/all.js'%}"></script>
+	<!-- Camera Slider -->
+	<script src="{% static 'Homepage/js/jquery.mobile.customized.min.js'%}"></script>
+	<script src="{% static 'Homepage/js/jquery.easing.1.3.js'%}"></script>
+	<script src="{% static 'Homepage/js/parallaxie.js'%}"></script>
+	<script src="{% static 'Homepage/js/headline.js'%}"></script>
+	<!-- Contact form JavaScript -->
+    <script src="{% static 'Homepage/js/jqBootstrapValidation.js'%}>"</script>
+    <script src="{% static 'Homepage/js/contact_me.js'%}"></script>
+    <!-- ALL PLUGINS -->
+    <script src="{% static 'Homepage/js/custom.js'%}"></script>
+    <script src="{% static 'Homepage/js/jquery.vide.js'%}"></script>
+
+</body>
+</html>
